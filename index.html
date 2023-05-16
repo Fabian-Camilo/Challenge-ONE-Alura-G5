@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Alura Challenge</title>
+  </head>
+  <body>
+    <nav>
+      <img src="img/logo.png" class="logo" alt="Alura Logo" />
+    </nav>
+    <section>
+        
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Encriptador de Texto</title>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <h1>Encriptador de Texto</h1>
+
+    <textarea id="inputText" placeholder="Ingresa el texto aquí"></textarea>
+
+    <button class="encrypt_button" onclick="encrypt()">Encriptar</button>
+    <button class="decrypt_button" onclick="decrypt()">Desencriptar</button>
+
+    <h2>Resultado:</h2>
+    <textarea id="outputText" readonly></textarea>
+
+    <button onclick="copyText()">Copiar</button>
+
+    <script>
+      function encrypt() {
+        const inputText = document.getElementById("inputText").value;
+        let outputText = "";
+        outputText = encryptText(inputText);
+        document.getElementById("outputText").value = outputText;
+      }
+
+      function decrypt() {
+        const inputText = document.getElementById("inputText").value;
+        let outputText = "";
+        outputText = decryptText(inputText);
+        document.getElementById("outputText").value = outputText;
+      }
+
+      function encryptText(text) {
+        let encryptedText = text.toLowerCase();
+        encryptedText = encryptedText.replace(/e/g, "enter");
+        encryptedText = encryptedText.replace(/i/g, "imes");
+        encryptedText = encryptedText.replace(/a/g, "ai");
+        encryptedText = encryptedText.replace(/o/g, "ober");
+        encryptedText = encryptedText.replace(/u/g, "ufat");
+        return encryptedText;
+      }
+
+      function decryptText(text) {
+        let decryptedText = text.toLowerCase();
+        decryptedText = decryptedText.replace(/enter/g, "e");
+        decryptedText = decryptedText.replace(/imes/g, "i");
+        decryptedText = decryptedText.replace(/ai/g, "a");
+        decryptedText = decryptedText.replace(/ober/g, "o");
+        decryptedText = decryptedText.replace(/ufat/g, "u");
+        return decryptedText;
+      }
+
+      function copyText() {
+        const outputText = document.getElementById("outputText");
+        outputText.select();
+        document.execCommand("copy");
+        alert("Texto copiado al portapapeles: " + outputText.value);
+      }
+
+      function validateInput(event) {
+        const input = event.target.value;
+        const regex = /^[a-z]*$/;
+
+        if (!regex.test(input)) {
+          alert(
+            "Por favor, ingresa solo letras minúsculas sin acentos ni caracteres especiales."
+          );
+          event.target.value = "";
+        }
+      }
+
+      document
+        .getElementById("inputText")
+        .addEventListener("input", validateInput);
+    </script>
+  </body>
+</html>
+-->
